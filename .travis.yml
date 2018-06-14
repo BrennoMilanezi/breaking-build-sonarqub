@@ -7,6 +7,7 @@ sudo: required
 
 addons:
   apt:
+    update: true
     packages:
       - oracle-java8-installer  
   sonarcloud:
@@ -17,7 +18,7 @@ addons:
 before_script:
   - export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 
-install:
+before_install:
   - apt-get install jq
 
 script:
