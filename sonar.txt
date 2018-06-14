@@ -1,0 +1,76 @@
+INFO: Scanner configuration file: /home/travis/.sonarscanner/sonar-scanner-3.0.3.778/conf/sonar-scanner.properties
+INFO: Project root configuration file: /home/travis/build/paulossjunior/TDD-Python/sonar-project.properties
+INFO: SonarQube Scanner 3.0.3.778
+INFO: Java 1.8.0_171 Oracle Corporation (64-bit)
+INFO: Linux 4.14.12-041412-generic amd64
+INFO: User cache: /home/travis/.sonar/cache
+INFO: Publish mode
+INFO: Load global settings
+INFO: Load global settings (done) | time=597ms
+INFO: Server id: AWHW8ct9-T_TB3XqouNu
+INFO: User cache: /home/travis/.sonar/cache
+INFO: Load/download plugins
+INFO: Load plugins index
+INFO: Load plugins index (done) | time=166ms
+INFO: Load/download plugins (done) | time=20833ms
+INFO: SonarQube server 7.2.0
+INFO: Default locale: "en_US", source code encoding: "UTF-8"
+INFO: Process project properties
+INFO: Load project branches
+INFO: Load project branches (done) | time=103ms
+INFO: Load project pull requests
+INFO: Load project pull requests (done) | time=101ms
+INFO: Load branch configuration
+INFO: Load branch configuration (done) | time=3ms
+INFO: Load project repositories (done) | time=166ms
+INFO: Execute project builders
+INFO: Execute project builders (done) | time=0ms
+INFO: Load quality profiles
+INFO: Load quality profiles (done) | time=128ms
+INFO: Load active rules
+INFO: Load active rules (done) | time=2451ms
+INFO: Load metrics repository
+INFO: Load metrics repository (done) | time=107ms
+INFO: Project key: TDD-Python
+INFO: Project base dir: /home/travis/build/paulossjunior/TDD-Python
+INFO: Organization key: paulossjunior-github
+INFO: -------------  Scan TDD-Python
+INFO: Load server rules
+INFO: Load server rules (done) | time=357ms
+INFO: Base dir: /home/travis/build/paulossjunior/TDD-Python
+INFO: Working dir: /home/travis/build/paulossjunior/TDD-Python/.scannerwork
+INFO: Source paths: src
+INFO: Source encoding: UTF-8, default locale: en_US
+INFO: Language is forced to py
+INFO: Index files
+INFO: 12 files indexed
+INFO: Quality profile for py: Sonar way
+INFO: Sensor SonarJavaXmlFileSensor [java]
+INFO: Sensor SonarJavaXmlFileSensor [java] (done) | time=1ms
+INFO: Sensor Python Squid Sensor [python]
+INFO: Sensor Python Squid Sensor [python] (done) | time=313ms
+INFO: Sensor PythonXUnitSensor [python]
+INFO: Sensor PythonXUnitSensor [python] (done) | time=5ms
+INFO: Sensor Zero Coverage Sensor
+INFO: Sensor Zero Coverage Sensor (done) | time=38ms
+INFO: Sensor CPD Block Indexer
+INFO: Sensor CPD Block Indexer (done) | time=0ms
+INFO: SCM provider for this project is: git
+INFO: 1 files to be analyzed
+INFO: 1/1 files analyzed
+INFO: 9 files had no CPD blocks
+INFO: Calculating CPD for 3 files
+INFO: CPD calculation finished
+INFO: Analysis report generated in 178ms, dir size=62 KB
+INFO: Analysis reports compressed in 33ms, zip size=30 KB
+INFO: Analysis report uploaded in 214ms
+INFO: ANALYSIS SUCCESSFUL, you can browse https://sonarcloud.io/dashboard/index/TDD-Python
+INFO: Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+INFO: More about the report processing at https://sonarcloud.io/api/ce/task?id=AWP-RBEYTzX59Iu7A1VU
+INFO: Task total time: 8.944 s
+INFO: ------------------------------------------------------------------------
+INFO: EXECUTION SUCCESS
+INFO: ------------------------------------------------------------------------
+INFO: Total time: 37.520s
+INFO: Final Memory: 63M/601M
+INFO: ------------------------------------------------------------------------
