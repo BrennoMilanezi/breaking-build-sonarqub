@@ -1,4 +1,7 @@
 language: bash
+dist: trusty
+sudo: required
+
 jdk:
   - oraclejdk8
 addons:
