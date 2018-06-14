@@ -1,0 +1,20 @@
+language: bash
+jdk:
+  - oraclejdk8
+addons:
+  apt:
+    packages:
+      - oracle-java8-installer  
+  sonarcloud:
+    organization: "paulossjunior-github"
+    token:
+      secure: c8fa3ca2a1b63fd4209ad71670e16d612daa416e  
+
+before_script:
+  - export JAVA_HOME=/usr/lib/jvm/java-8-oracle
+
+install:
+  - sudo apt-get install jq
+
+script:
+  - sonar-scanner > sonar-scanner.txt
