@@ -15,6 +15,8 @@
     
     status=$(curl -u $2: "$3/api/qualitygates/project_status?analysisId=$analysisId" | jq -r '.projectStatus.status')
 
-    if [ "$status" == "ERROR" ]; then 
+    echo "Status: $status" 
+
+    if [ $status == "ERROR" ]; then 
         echo "ERROR"
     fi
