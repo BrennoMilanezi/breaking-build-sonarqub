@@ -17,4 +17,5 @@ install:
   - sudo apt-get install jq
 
 script:
-  - sonar-scanner > sonar-scanner.txt
+  - sonar-scanner > sonar.txt
+  - sh buildbreaksonar.sh sonar.txt c8fa3ca2a1b63fd4209ad71670e16d612daa416e https://sonarcloud.io
