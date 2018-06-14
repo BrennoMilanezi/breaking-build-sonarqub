@@ -1,15 +1,18 @@
 #!/bin/bash
 #sh buildbreaksonar.sh sonar.txt c8fa3ca2a1b63fd4209ad71670e16d612daa416e (token) https://sonarcloud.io
-echo Starting Scrip
 
-echo Searching SonnarQueb AnalysisId in $1 
+    echo "Starting Scrip"
 
-url=$(grep "/api/ce/task?id=" $1 | sed s/.*h// )
+    echo "Searching SonnarQueb AnalysisId in $1" 
 
-echo "Searching at h$url"
+    url=$(grep "/api/ce/task?id=" $1 | sed s/.*h// )
 
-analysisId=$(curl -u $2: "h$url" | jq -r '.task.analysisId')
+    echo "Searching at h$url"
 
-status=$(curl -u $2: "$3/api/qualitygates/project_status?analysisId=$analysisId" | jq -r '.projectStatus.status')
+    analysisId=$(curl -u $2: "h$url" | jq -r '.task.analysisId')
 
-echo "$status"
+    status=$(curl -u $2: "$3/api/qualitygates/project_status?analysisId=$analysisId" | jq -r '.projectStatus.status')
+
+    if [ "$status" == "ERROR" ]; then 
+        echo "ERROR"
+    fi
