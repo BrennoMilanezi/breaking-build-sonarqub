@@ -19,7 +19,7 @@ before_script:
   - export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 
 before_install:
-  - apt-get install jq
+  - sudo apt-get install jq
 
 script:
   - sonar-scanner > sonar.txt
