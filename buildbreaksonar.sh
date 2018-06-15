@@ -19,6 +19,6 @@ status=$(curl -u $2: "$3/api/qualitygates/project_status?analysisId=$analysisId"
 
 echo "Status: $status" 
 
-if [ $status == "ERROR" ]; then 
+if [ $status = "ERROR" ]; then 
     echo "ERROR"
 fi
