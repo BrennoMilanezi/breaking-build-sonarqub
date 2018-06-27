@@ -1,4 +1,4 @@
-# Break Build com a Qualidade do Sonarqube
+# Breaking Build com a Qualidade do Sonarqube
 
 Esse é um scrpit criado para quebrar o Build do Travis caso a nota do Sonarqube não seja adequada. 
 
