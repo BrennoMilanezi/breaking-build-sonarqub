@@ -3,7 +3,7 @@
 Esse é um scrpit criado para quebrar o Build do Travis caso a nota do Sonarqube não seja adequada. 
 
 ## Utilização
-1) Copie o arquivo buildbreaksonar.sh para o seu projeto
+1) Copie o arquivo breakingbuildsonar.sh para o seu projeto
 2) Adicione as seguintes linhas no .travis.yml
 
 ```
@@ -12,7 +12,7 @@ before_install:
   
 script:
   - sonar-scanner > sonar.txt
-  - sh buildbreaksonar.sh sonar.txt <token_do_sonar> <URL do Servidor do Sonar>
+  - sh breakingbuildsonar.sh sonar.txt <token_do_sonar> <URL do Servidor do Sonar>
   - rm sonar.txt
 ```
 
